@@ -35,8 +35,7 @@ export default function Promo() {
                         {val}
                     </h1>
                     <div className={styles.row}>
-                        <DeveloperCard />
-                        <div className={styles.column} data-aos="fade-left">
+                        <div className={styles.column} data-aos="fade-up">
                             <h2 className={styles.subtitle}>
                                 Здраствуйте, меня зовут <span>Михаил</span>{' '}
                                 <br></br> Я - Разработчик

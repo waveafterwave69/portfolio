@@ -4,6 +4,7 @@ import Promo from '../components/Promo/Promo'
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import AboutMe from '../components/AboutMe/AboutMe'
 
 export default function Main() {
     useEffect(() => {
@@ -17,6 +18,7 @@ export default function Main() {
         <>
             <Header />
             <Promo />
+            <AboutMe />
         </>
     )
 }

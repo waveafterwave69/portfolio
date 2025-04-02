@@ -196,7 +196,7 @@
     }
 
     .title {
-        display: none;
+        font-size: 84px;
     }
 
     .row {
@@ -271,7 +271,7 @@
     }
 
     .title {
-        display: none;
+        font-size: 52px;
     }
 
     .row {
@@ -301,6 +301,74 @@
             font-size: 14px;
             line-height: 129%;
             bottom: -10px;
+            right: -5px;
+        }
+    }
+
+    .text {
+        max-width: 610px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        margin-bottom: 75px;
+
+        &::before {
+            content: '<p>';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -25px;
+            left: -15px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: -30px;
+            left: -15px;
+        }
+    }
+
+    .button {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        font-family: var(--font-family-IBM);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 131%;
+        max-width: 248px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        max-width: 400px;
+        font-size: 42px;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 112%;
+        max-width: 283px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+
+        &::before {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -20px;
+            left: -20px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: -20px;
             right: -5px;
         }
     }

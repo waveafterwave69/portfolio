@@ -17,7 +17,7 @@ export default function () {
                             </li>
                             <li>
                                 <a href="#!" className={styles.pages__item}>
-                                    ####
+                                    Информация
                                 </a>
                             </li>
                         </ul>
