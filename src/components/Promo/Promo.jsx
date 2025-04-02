@@ -1,28 +1,8 @@
-import DeveloperCard from '../DeveloperCard/DeveloperCard'
 import styles from './styles.module.scss'
 
 import sendMessage from '../../img/promo/promo-lets-talk.svg'
-import { useState } from 'react'
 
 export default function Promo() {
-    const [val, setVal] = useState('F')
-
-    window.onload = function () {
-        let str = 'Frontend Developer.'
-        let arr = str.split('')
-        let res = ''
-        let count = 0
-
-        setInterval(() => {
-            if (count < arr.length) {
-                let curr = arr[count]
-                res += curr
-                setVal(res)
-                count++
-            }
-        }, 125)
-    }
-
     return (
         <>
             <div className={styles.promo}>
@@ -32,7 +12,7 @@ export default function Promo() {
                         data-aos="zoom-in"
                         data-aos-duration="500"
                     >
-                        {val}
+                        Frontend Developer.
                     </h1>
                     <div className={styles.row}>
                         <div className={styles.column} data-aos="fade-up">
