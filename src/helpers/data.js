@@ -1,51 +1,51 @@
 export const swiperEls = [
     {
         id: 'HTML',
-        img: '.../img/skills/html.svg',
+        img: './src/img/skills/html.svg',
     },
     {
         id: 'CSS',
-        img: '../img/skills/css.svg',
+        img: './src/img/skills/css.svg',
     },
     {
         id: 'JS',
-        img: '../img/skills/js.svg',
+        img: './src/img/skills/js.svg',
     },
     {
         id: 'REACT',
-        img: '../img/skills/react.svg',
+        img: './src/img/skills/react.svg',
     },
     {
         id: 'SASS',
-        img: '../img/skills/sass.svg',
+        img: './src/img/skills/sass.svg',
     },
     {
         id: 'REDUX',
-        img: '../img/skills/redux.svg',
+        img: './src/img/skills/redux.svg',
     },
     {
         id: 'NEXT',
-        img: '../img/skills/next.svg',
+        img: './src/img/skills/next.svg',
     },
     {
         id: 'VITE',
-        img: '../img/skills/vite.svg',
+        img: './src/img/skills/vite.svg',
     },
     {
         id: 'WEBPACK',
-        img: '../img/skills/webpack.svg',
+        img: './src/img/skills/webpack.svg',
     },
     {
         id: 'GIT',
-        img: '../img/skills/git.svg',
+        img: './src/img/skills/git.svg',
     },
     {
         id: 'GITHUB',
-        img: '../img/skills/github.svg',
+        img: './src/img/skills/github.svg',
     },
     {
         id: 'FIGMA',
-        img: '../img/skills/figma.svg',
+        img: './src/img/skills/figma.svg',
     },
 ]
 

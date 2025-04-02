@@ -2,6 +2,8 @@ import { swiperEls, colors } from '../../helpers/data'
 
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import img from '../../img/skills/html.svg'
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 
@@ -24,7 +26,7 @@ export default function SwiperComponent(props) {
                         style={{ color: colors[index] }}
                         key={swiperEl.id}
                     >
-                        <SlideElement {...swiperEl} />
+                        <SlideElement id={swiperEls.id} img={img} />
                     </SwiperSlide>
                 ))}
             </Swiper>
