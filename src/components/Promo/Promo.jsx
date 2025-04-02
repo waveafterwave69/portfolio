@@ -7,13 +7,6 @@ export default function Promo() {
         <>
             <div className={styles.promo}>
                 <div className="container">
-                    <h1
-                        className={styles.title}
-                        data-aos="zoom-in"
-                        data-aos-duration="500"
-                    >
-                        Frontend Developer.
-                    </h1>
                     <div className={styles.row}>
                         <div className={styles.column} data-aos="fade-up">
                             <h2 className={styles.subtitle}>
@@ -25,7 +18,10 @@ export default function Promo() {
                                 лет, я активно занимаюсь frontend разработкой и
                                 имею опыт уже в 2 года.
                             </p>
-                            <button className={styles.button}>
+                            <a
+                                href="mailto:waveafterwave3w2@gmail.com"
+                                className={styles.button}
+                            >
                                 <p className={styles.button__text}>
                                     Давайте поговорим
                                 </p>
@@ -34,7 +30,7 @@ export default function Promo() {
                                     src={sendMessage}
                                     alt="send message"
                                 />
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>

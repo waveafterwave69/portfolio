@@ -13,20 +13,23 @@ export default function AboutMe() {
                                 Обо мне
                             </h3>
                             <div className={styles.info} data-aos="zoom-in">
-                                <h5 className={styles.info__title}>Hello!</h5>
+                                <h5 className={styles.info__title}>
+                                    Здраствуйте!
+                                </h5>
                                 <p className={styles.info__text}>
-                                    My name is Sinan and I specialize in web
-                                    developement that utilizes HTML, CSS, JS,
-                                    and REACT etc. I am a highly motivated
-                                    individual and eternal optimist dedicated to
-                                    writing clear, concise, robust code that
-                                    works. Striving to never stop learning and
-                                    improving. When I'm not coding, I am writing
-                                    bolgs, reading, or picking up some new
-                                    hands-on art project like photography. I
-                                    like to have my perspective and belief
-                                    systems challenged so that I see the world
-                                    through new eyes.
+                                    Меня зовут Михаил, и я специализируюсь на
+                                    веб-разработке с использованием HTML, CSS,
+                                    JS и REACT и других инструментах. Я высоко
+                                    мотивированный и отвественный человек. Я
+                                    способен создавать привлекательный и
+                                    функциональный интерфейс для любых типов
+                                    веб-сайтов и приложений, от блогов и
+                                    интернет-магазинов до порталов и личных
+                                    кабинетов пользователей. Я обладаю знаниями
+                                    в области адаптивной веб-разработки и готов
+                                    создать веб-приложения, которые будут
+                                    одинаково хорошо работать на различных
+                                    устройствах.
                                 </p>
                             </div>
                         </div>
