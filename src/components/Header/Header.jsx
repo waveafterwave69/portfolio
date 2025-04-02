@@ -3,7 +3,7 @@ import styles from './styles.module.scss'
 export default function () {
     return (
         <>
-            <header className={styles.header}>
+            <header className={styles.header} data-aos="fade-down">
                 <div className="header__container">
                     <div className={styles.row}>
                         <a href="#!" className={styles.logo}>

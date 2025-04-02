@@ -2,20 +2,44 @@ import DeveloperCard from '../DeveloperCard/DeveloperCard'
 import styles from './styles.module.scss'
 
 import sendMessage from '../../img/promo/promo-lets-talk.svg'
+import { useState } from 'react'
 
 export default function Promo() {
+    const [val, setVal] = useState('F')
+
+    window.onload = function () {
+        let str = 'Frontend Developer.'
+        let arr = str.split('')
+        let res = ''
+        let count = 0
+
+        setInterval(() => {
+            if (count < arr.length) {
+                let curr = arr[count]
+                res += curr
+                setVal(res)
+                count++
+            }
+        }, 125)
+    }
+
     return (
         <>
             <div className={styles.promo}>
                 <div className="container">
-                    <h1 className={styles.title}>Frontend Developer</h1>
+                    <h1
+                        className={styles.title}
+                        data-aos="zoom-in"
+                        data-aos-duration="500"
+                    >
+                        {val}
+                    </h1>
                     <div className={styles.row}>
                         <DeveloperCard />
-                        <div className={styles.column}>
+                        <div className={styles.column} data-aos="fade-left">
                             <h2 className={styles.subtitle}>
-                                Здраствуйте,<br></br>
-                                меня зовут Михаил<br></br>я - разработчик
-                                <br></br>
+                                Здраствуйте, меня зовут <span>Михаил</span>{' '}
+                                <br></br> Я - Разработчик
                             </h2>
                             <p className={styles.text}>
                                 приветствую вас на своём сайте-визитке. мне 17

@@ -10,7 +10,7 @@ import cardDownloadImg from '../../img/promo/promo-download.svg'
 export default function DeveloperCard() {
     return (
         <>
-            <div className={styles.card}>
+            <div className={styles.card} data-aos="fade-right">
                 <div className={styles.column}>
                     <img
                         className={styles.card__img}

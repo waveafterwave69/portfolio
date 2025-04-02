@@ -1,4 +1,343 @@
 .promo {
     padding-top: 150px;
     background-color: var(--color-bg1);
+    font-family: var(--font-family-ubuntu);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-white);
+}
+
+.title {
+    font-weight: 400;
+    font-size: 117px;
+    line-height: 115%;
+    text-align: center;
+    color: var(--color-brand2);
+    margin-bottom: 85px;
+}
+
+.row {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+    padding-bottom: 100px;
+    align-items: center;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 112%;
+    position: relative;
+    max-width: 583px;
+    margin-bottom: 66px;
+
+    & span {
+        color: var(--color-brand1);
+    }
+
+    &::before {
+        content: '<h1>';
+        position: absolute;
+        font-family: var(--font-family-IBM);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: var(--color-brand2);
+        top: -15px;
+        left: -15px;
+    }
+
+    &::after {
+        content: '</h1>';
+        position: absolute;
+        font-family: var(--font-family-IBM);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: var(--color-brand2);
+        bottom: 5px;
+        right: 35px;
+    }
+}
+
+.text {
+    max-width: 610px;
+    font-family: var(--font-family-IBM);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: var(--color-white);
+    margin-bottom: 75px;
+    position: relative;
+
+    &::before {
+        content: '<p>';
+        position: absolute;
+        font-family: var(--font-family-IBM);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: var(--color-brand2);
+        top: -25px;
+        left: -15px;
+    }
+
+    &::after {
+        content: '</p>';
+        position: absolute;
+        font-family: var(--font-family-IBM);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 129%;
+        color: var(--color-brand2);
+        bottom: -30px;
+        left: -15px;
+    }
+}
+
+.button {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 131%;
+    text-transform: capitalize;
+    color: var(--color-brand1);
+}
+
+@media (max-width: 1280px) {
+    .promo {
+        padding-top: 120px;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 110px;
+        line-height: 115%;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    .row {
+        column-gap: 100px;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 112%;
+        max-width: 583px;
+        margin-bottom: 66px;
+
+        &::before {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -15px;
+            left: -15px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: 5px;
+            right: 35px;
+        }
+    }
+
+    .text {
+        max-width: 610px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        margin-bottom: 75px;
+
+        &::before {
+            content: '<p>';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -25px;
+            left: -15px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: -30px;
+            left: -15px;
+        }
+    }
+
+    .button {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        font-family: var(--font-family-IBM);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 131%;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        padding-top: 120px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .row {
+        column-gap: 100px;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 112%;
+        max-width: 583px;
+        margin-bottom: 84px;
+
+        &::before {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -15px;
+            left: -15px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: 5px;
+            right: 50px;
+        }
+    }
+
+    .text {
+        max-width: 610px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        margin-bottom: 75px;
+
+        &::before {
+            content: '<p>';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -25px;
+            left: -15px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: -30px;
+            left: -15px;
+        }
+    }
+
+    .button {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        font-family: var(--font-family-IBM);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 131%;
+    }
+}
+
+@media (max-width: 515px) {
+    .promo {
+        padding-top: 120px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .row {
+        column-gap: 100px;
+        padding-bottom: 100px;
+        flex-wrap: wrap;
+    }
+
+    .subtitle {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 112%;
+        max-width: 283px;
+        margin: 0 auto;
+        margin-bottom: 84px;
+
+        &::before {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -20px;
+            left: -20px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: -10px;
+            right: -5px;
+        }
+    }
+
+    .text {
+        max-width: 610px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+        margin-bottom: 75px;
+
+        &::before {
+            content: '<p>';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            top: -25px;
+            left: -15px;
+        }
+
+        &::after {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 129%;
+            bottom: -30px;
+            left: -15px;
+        }
+    }
+
+    .button {
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        font-family: var(--font-family-IBM);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 131%;
+        max-width: 248px;
+    }
 }
