@@ -333,9 +333,9 @@
 @media (max-width: 400px) {
     .subtitle {
         font-weight: 400;
-        font-size: 28px;
+        font-size: 32px;
         line-height: 112%;
-        max-width: 283px;
+        max-width: 282px;
         margin: 0 auto;
         margin-bottom: 64px;
 
@@ -343,7 +343,7 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 129%;
-            top: -20px;
+            top: -23px;
             left: -20px;
         }
 
@@ -351,15 +351,15 @@
             font-weight: 400;
             font-size: 14px;
             line-height: 129%;
-            bottom: -20px;
-            right: 15px;
+            bottom: -15px;
+            right: -5px;
         }
     }
 
     .text {
         max-width: 610px;
         font-weight: 400;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 125%;
         margin-bottom: 75px;
 
