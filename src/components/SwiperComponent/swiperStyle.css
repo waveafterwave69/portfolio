@@ -121,6 +121,12 @@
     .swiper-el {
         row-gap: 10px;
         width: 90px;
+        height: 130px;
+    }
+
+    .swiper-el img {
+        width: 90px;
+        height: 90px;
     }
 
     .swiper-title {
