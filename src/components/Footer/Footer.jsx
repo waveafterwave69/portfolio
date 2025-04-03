@@ -47,7 +47,7 @@ export default function Footer() {
                             />
                         </div>
                         <button className={styles.form__button}>
-                            <p>Send Message</p>
+                            <p>Отправить</p>
                             <img src={img} alt="shape" />
                         </button>
                     </form>
