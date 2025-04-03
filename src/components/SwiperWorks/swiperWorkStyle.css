@@ -1,0 +1,236 @@
+.swiper-work {
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-link {
+    font-family: var(--font-family-IBM);
+    font-weight: 400;
+    font-size: 18px;
+    max-width: 550px;
+    line-height: 125%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-brand1);
+    text-decoration: underline;
+}
+
+
+.swiper-text {
+    font-family: var(--font-family-IBM);
+    font-weight: 400;
+    font-size: 22px;
+    max-width: 550px;
+    line-height: 125%;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-white);
+    margin-bottom: 25px;
+}
+
+
+.swiper-button-next::after {
+    content: '';
+    right: -5px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../../img/skills/Button-R.svg');
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: absolute;
+    right: -12px;
+}
+
+.swiper-button-prev::after {
+    content: '';
+    right: -5px;
+    width: 75px;
+    height: 75px;
+    background-image: url('../../img/skills/Button-L.svg');
+    background-repeat: no-repeat;
+    z-index: 100;
+    position: absolute;
+    left: -10px;
+}
+
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+}
+
+.swiper-el-work {
+    margin-bottom: 10px;
+}
+
+
+.swiper-el {
+    display: flex;
+    row-gap: 20px;
+    flex-direction: column;
+    width: 650px;
+}
+
+.swiper-work-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiper-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 131%;
+}
+
+@media (max-width: 1000px) {
+    .swiper-work {
+        width: 700px;
+    }
+
+    .swiper-el {
+        width: 450px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .swiper-text {
+        font-family: var(--font-family-IBM);
+        font-weight: 400;
+        font-size: 22px;
+        max-width: 550px;
+        line-height: 125%;
+        margin: 0 auto;
+        text-align: center;
+        color: var(--color-white);
+        margin-bottom: 25px;
+    }
+
+    .swiper {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        justify-content: center;
+    }
+
+    .swiper-el {
+        row-gap: 10px;
+        width: 120px;
+    }
+
+    .swiper-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: auto;
+    }
+
+    .swiper-button-next img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-button-next::after {
+        width: 40px;
+        height: 40px;
+        background-image: url('../../img/skills/Button-R2.png');
+        right: -10px;
+    }
+
+    .swiper-button-prev::after {
+        width: 40px;
+        height: 40px;
+        background-image: url('../../img/skills/Button-L2.png');
+    }
+
+    .swiper-work {
+        width: 450px;
+    }
+
+    .swiper-el {
+        width: 320px;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+
+    .swiper-text {
+        font-size: 18px;
+        max-width: 328px;
+        margin-bottom: 20px;
+        max-width: 290px;
+    }
+
+    .swiper {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        justify-content: center;
+    }
+
+    .swiper-el {
+        row-gap: 10px;
+        width: 90px;
+        height: 130px;
+    }
+
+    .swiper-el img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .swiper-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: auto;
+    }
+
+    .swiper-button-next img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .swiper-button-next::after {
+        width: 40px;
+        height: 40px;
+        background-image: url('../../img/skills/Button-R2.png');
+        right: -10px;
+    }
+
+    .swiper-button-prev::after {
+        width: 40px;
+        height: 40px;
+        background-image: url('../../img/skills/Button-L2.png');
+    }
+
+
+    .swiper-work {
+        width: 330px;
+    }
+
+    .swiper-el-work img {
+        width: 220px;
+        height: 140px;
+    }
+}

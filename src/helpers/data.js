@@ -63,3 +63,31 @@ export const colors = [
     '#000000',
     '#19bd7e',
 ]
+
+export const swiperWorkEls = [
+    {
+        id: 'https://catarog.ru/',
+        img: '../../img/works/works-1.svg',
+        text: 'Веб-сайт на HTML, SASS, JS',
+    },
+    {
+        id: 'https://fashion-chi-eight.vercel.app/',
+        img: '../../img/works/works-2.svg',
+        text: 'Верстка на HTML, SASS, REACT, VITE',
+    },
+    {
+        id: 'https://waveafterwave-notes.netlify.app/',
+        img: '../../img/works/works-3.svg',
+        text: 'Веб-приложение заметок на HTML, SASS, JS',
+    },
+    {
+        id: 'https://todolistwaveaffwave.netlify.app/',
+        img: '../../img/works/works-4.svg',
+        text: 'Веб-приложение списка дел на HTML, SASS, JS',
+    },
+    {
+        id: 'https://qr-scanner-pink.vercel.app/generate',
+        img: '../../img/works/works-5.svg',
+        text: 'Веб-приложение генерации и сканирования qr кодов на HTML, SASS, REACT, VITE',
+    },
+]

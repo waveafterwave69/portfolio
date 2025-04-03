@@ -6,6 +6,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Skills from '../components/Skills/Skills'
+import Works from '../components/Works/Works'
 
 export default function Main() {
     useEffect(() => {
@@ -21,6 +22,7 @@ export default function Main() {
             <Promo />
             <AboutMe />
             <Skills />
+            <Works />
         </>
     )
 }

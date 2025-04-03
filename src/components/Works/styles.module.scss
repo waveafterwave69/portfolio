@@ -1,0 +1,20 @@
+.works {
+    background: url('../../img/works/works-bg.png');
+    padding: 128px 0px;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 112%;
+    color: var(--color-brand1);
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 48px;
+        margin-bottom: 65px;
+    }
+}
