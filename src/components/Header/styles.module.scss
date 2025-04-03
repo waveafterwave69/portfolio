@@ -113,7 +113,25 @@
 }
 
 @media (max-width: 600px) {
-    .header {
+    .social__list {
         display: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .logo {
+        font-size: 16px;
+    }
+
+    .pages__list {
+        column-gap: 15px;
+    }
+
+    .pages__item {
+        font-size: 15px;
+    }
+
+    .header__container {
+        padding: 0px 10px;
     }
 }
