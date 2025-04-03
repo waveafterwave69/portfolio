@@ -3,6 +3,7 @@ import Header from '../components/Header/Header'
 import React, { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import InfoContact from '../components/InfoContact/InfoContact'
 
 export default function Info() {
     useEffect(() => {
@@ -12,5 +13,9 @@ export default function Info() {
         })
     }, [])
 
-    return <></>
+    return (
+        <>
+            <InfoContact />
+        </>
+    )
 }

@@ -1,0 +1,88 @@
+.contact {
+    background-color: var(--color-bg2);
+    padding: 150px 0px 128px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    font-family: var(--font-family-IBM);
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 131%;
+    text-transform: capitalize;
+    color: var(--color-brand1);
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+
+.contact__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.contact__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    color: var(--color-white);
+    font-family: var(--font-family-IBM);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+@media (max-width: 500px) {
+    .contact {
+        padding: 120px 0px 64px;
+    }
+
+    .row {
+        row-gap: 10px;
+    }
+
+    .socials {
+        font-family: var(--font-family-IBM);
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 131%;
+        text-transform: capitalize;
+        color: var(--color-brand1);
+        margin-bottom: 25px;
+    }
+
+    .contact__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        align-items: center;
+    }
+
+    .contact__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+        color: var(--color-white);
+        font-family: var(--font-family-IBM);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 125%;
+    }
+}
