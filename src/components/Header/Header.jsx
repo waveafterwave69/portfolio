@@ -1,24 +1,28 @@
 import styles from './styles.module.scss'
 
+import { NavLink } from 'react-router-dom'
+
+const setActive = ({ isActive }) => (isActive ? 'pages__active' : 'pages__item')
+
 export default function () {
     return (
         <>
             <header className={styles.header} data-aos="fade-down">
                 <div className="header__container">
                     <div className={styles.row}>
-                        <a href="#!" className={styles.logo}>
+                        <NavLink to="/" className={styles.logo}>
                             / DEVELOPER /
-                        </a>
+                        </NavLink>
                         <ul className={styles.pages__list}>
                             <li>
-                                <a href="#!" className={styles.pages__item}>
+                                <NavLink to="/" className={setActive}>
                                     Главная
-                                </a>
+                                </NavLink>
                             </li>
                             <li>
-                                <a href="#!" className={styles.pages__item}>
+                                <NavLink to="/info" className={setActive}>
                                     Информация
-                                </a>
+                                </NavLink>
                             </li>
                         </ul>
                         <ul className={styles.social__list}>

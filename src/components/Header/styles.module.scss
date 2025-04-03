@@ -39,6 +39,11 @@
     }
 }
 
+.pages__active {
+    color: var(--color-brand1);
+    font-weight: 600;
+}
+
 .social__list {
     display: flex;
     column-gap: 32px;

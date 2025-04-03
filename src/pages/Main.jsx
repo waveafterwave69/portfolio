@@ -18,7 +18,6 @@ export default function Main() {
 
     return (
         <>
-            <Header />
             <Promo />
             <AboutMe />
             <Skills />

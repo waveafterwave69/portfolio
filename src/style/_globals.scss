@@ -29,3 +29,24 @@ body {
         padding: 0px 10px;
     }
 }
+
+.pages__item {
+    font-weight: 200;
+    font-size: 24px;
+    line-height: 133%;
+    color: var(--color-white);
+    font-family: var(--font-family-IBM);
+
+    &:hover {
+        color: var(--color-brand1);
+    }
+}
+
+.pages__active {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    font-family: var(--font-family-IBM);
+    color: var(--color-brand1);
+    font-weight: 600;
+}
