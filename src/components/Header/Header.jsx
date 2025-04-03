@@ -16,12 +16,12 @@ export default function () {
                         <ul className={styles.pages__list}>
                             <li>
                                 <NavLink to="/" className={setActive}>
-                                    Главная
+                                    <p>Главная</p>
                                 </NavLink>
                             </li>
                             <li>
                                 <NavLink to="/info" className={setActive}>
-                                    Информация
+                                    <p>Информация</p>
                                 </NavLink>
                             </li>
                         </ul>

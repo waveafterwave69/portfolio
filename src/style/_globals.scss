@@ -43,13 +43,14 @@ body {
 }
 
 .pages__active {
-    font-weight: 400;
+    p {
+        text-decoration: underline;
+        font-weight: 400;
+    }
     font-size: 24px;
     line-height: 133%;
     font-family: var(--font-family-IBM);
     color: var(--color-brand1);
-    font-weight: 600;
-    text-decoration: underline;
 }
 
 @media (max-width: 1280px) {
