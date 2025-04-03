@@ -1,3 +1,4 @@
+import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import Info from './pages/Info'
 import Main from './pages/Main'
@@ -13,6 +14,8 @@ function App() {
                 <Route path="/" element={<Main />} />
                 <Route path="/info" element={<Info />} />
             </Routes>
+
+            <Footer />
         </>
     )
 }
