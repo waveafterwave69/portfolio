@@ -209,19 +209,29 @@
     .swiper-button-next img {
         width: 30px;
         height: 30px;
+
+    }
+
+    .swiper-button-next {
+        right: -7px;
+    }
+
+    .swiper-button-prev {
+        left: -7px;
     }
 
     .swiper-button-next::after {
-        width: 30px;
-        height: 30px;
-        background-image: url('../../img/skills/Button-R2.png');
-        right: -10px;
+        width: 32px;
+        height: 32px;
+        background-image: url('../../img/skills/right-arrow.png');
+        right: 0px;
     }
 
     .swiper-button-prev::after {
-        width: 30px;
-        height: 30px;
-        background-image: url('../../img/skills/Button-L2.png');
+        width: 32px;
+        height: 32px;
+        background-image: url('../../img/skills/arrow.png');
+        left: 0px;
     }
 
 
