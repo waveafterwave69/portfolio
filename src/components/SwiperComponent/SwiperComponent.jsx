@@ -31,21 +31,24 @@ const arr = [
 ]
 
 import 'swiper/css'
-import 'swiper/css/navigation'
 
 import './swiperStyle.css'
 
-import { Navigation } from 'swiper/modules'
+import { Autoplay } from 'swiper/modules'
 import SlideElement from '../SlideElement/SlideElement'
 
 export default function SwiperComponent(props) {
     return (
         <>
             <Swiper
-                navigation={true}
-                modules={[Navigation]}
+                modules={[Autoplay]}
                 className="mySwiper"
                 slidesPerView={1}
+                autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                }}
+                loop={true}
             >
                 {swiperEls.map((swiperEl, index) => (
                     <SwiperSlide
