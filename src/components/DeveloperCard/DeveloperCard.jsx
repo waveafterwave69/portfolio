@@ -4,7 +4,6 @@ import cardProfileImg from '../../img/promo/profile-photo.svg'
 import cardEmailImg from '../../img/promo/promo-mail.svg'
 import cardLocationImg from '../../img/promo/promo-location.svg'
 import cardWorkImg from '../../img/promo/promo-work.svg'
-import cardLinkImg from '../../img/promo/promo-link.svg'
 import cardDownloadImg from '../../img/promo/promo-download.svg'
 
 export default function DeveloperCard() {
@@ -50,16 +49,6 @@ export default function DeveloperCard() {
                                 alt="график работы"
                             />
                             Полный день
-                        </li>
-                        <li>
-                            <a href="#!" className={styles.link}>
-                                <img
-                                    className={styles.link__img}
-                                    src={cardLinkImg}
-                                    alt="ссылка на сайт"
-                                />
-                                ссылка
-                            </a>
                         </li>
                     </ul>
                 </div>
