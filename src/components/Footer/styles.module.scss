@@ -99,6 +99,17 @@
     &:hover {
         background-color: #0dc9ac;
     }
+
+    &:active {
+        position: relative;
+        top: 2px;
+        background-color: #0dc9ac;
+    }
+
+    &:disabled {
+        cursor: not-allowed;
+        background-color: #57867f;
+    }
 }
 
 @media (max-width: 1110px) {

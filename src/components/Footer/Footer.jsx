@@ -102,7 +102,7 @@ export default function Footer() {
                                         border: hasNameError
                                             ? '1px solid red'
                                             : null,
-                                        padding: '10px',
+                                        padding: '5px',
                                     }}
                                 />
                             </div>
@@ -122,7 +122,7 @@ export default function Footer() {
                                         border: hasEmailError
                                             ? '1px solid red'
                                             : null,
-                                        padding: '10px',
+                                        padding: '5px',
                                     }}
                                 />
                             </div>
@@ -143,7 +143,7 @@ export default function Footer() {
                                     border: hasTextError
                                         ? '1px solid red'
                                         : null,
-                                    padding: '10px',
+                                    padding: '5px',
                                 }}
                             />
                         </div>
