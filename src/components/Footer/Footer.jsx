@@ -4,6 +4,51 @@ import img from '../../img/footer/shape.svg'
 import { useState } from 'react'
 
 export default function Footer() {
+    const [hasNameError, setHasNameError] = useState(false)
+    const [hasEmailError, setHasEmailError] = useState(false)
+    const [hasTextError, setHasTextError] = useState(false)
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [text, setText] = useState('')
+
+    function handleNameChange(e) {
+        const value = e.target.value
+        setName(value)
+        setHasNameError(value.trim().length === 0)
+    }
+
+    function handleEmailChange(e) {
+        const value = e.target.value
+        setEmail(value)
+        setHasEmailError(value.trim().length === 0)
+    }
+
+    function handleTextChange(e) {
+        const value = e.target.value
+        setText(value)
+        setHasTextError(value.trim().length === 0)
+    }
+
+    function buttonClick() {
+        if (document.querySelector('#name').value.trim().length === 0) {
+            setHasNameError(true)
+        } else {
+            setHasNameError(false)
+        }
+
+        if (document.querySelector('#email').value.trim().length === 0) {
+            setHasEmailError(true)
+        } else {
+            setHasEmailError(false)
+        }
+
+        if (document.querySelector('#text').value.trim().length === 0) {
+            setHasTextError(true)
+        } else {
+            setHasTextError(false)
+        }
+    }
+
     const onSubmit = async (event) => {
         event.preventDefault()
         const formData = new FormData(event.target)
@@ -51,6 +96,14 @@ export default function Footer() {
                                     placeholder="Напишите имя"
                                     id="name"
                                     className={styles.form__input}
+                                    onChange={handleNameChange}
+                                    value={name}
+                                    style={{
+                                        border: hasNameError
+                                            ? '1px solid red'
+                                            : null,
+                                        padding: '10px',
+                                    }}
                                 />
                             </div>
                             <div className={styles.form__item}>
@@ -63,6 +116,14 @@ export default function Footer() {
                                     placeholder="Напишите почту"
                                     id="email"
                                     className={styles.form__input}
+                                    onChange={handleEmailChange}
+                                    value={email}
+                                    style={{
+                                        border: hasEmailError
+                                            ? '1px solid red'
+                                            : null,
+                                        padding: '10px',
+                                    }}
                                 />
                             </div>
                         </div>
@@ -76,9 +137,24 @@ export default function Footer() {
                                 placeholder="Напишите сообщение"
                                 id="text"
                                 className={styles.form__input__full}
+                                onChange={handleTextChange}
+                                value={text}
+                                style={{
+                                    border: hasTextError
+                                        ? '1px solid red'
+                                        : null,
+                                    padding: '10px',
+                                }}
                             />
                         </div>
-                        <button type="submit" className={styles.form__button}>
+                        <button
+                            disabled={
+                                hasEmailError || hasNameError || hasTextError
+                            }
+                            onClick={buttonClick}
+                            type="submit"
+                            className={styles.form__button}
+                        >
                             <p>Отправить</p>
                             <img src={img} alt="shape" />
                         </button>
