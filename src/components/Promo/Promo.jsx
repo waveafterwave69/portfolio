@@ -5,7 +5,7 @@ import sendMessage from '../../img/promo/promo-lets-talk.svg'
 export default function Promo() {
     return (
         <>
-            <div className={styles.promo}>
+            <section className={styles.promo}>
                 <div className="container">
                     <div className={styles.row}>
                         <div className={styles.column} data-aos="fade-up">
@@ -34,7 +34,7 @@ export default function Promo() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

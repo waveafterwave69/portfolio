@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export default function Skills() {
     return (
         <>
-            <div className={styles.skills}>
+            <section className={styles.skills}>
                 <div className="container">
                     <div data-aos="fade-up">
                         <h2 className={styles.title}>Навыки</h2>
@@ -27,7 +27,7 @@ export default function Skills() {
                         <SwiperComponent />
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

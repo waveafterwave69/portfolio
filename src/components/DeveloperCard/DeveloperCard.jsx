@@ -32,15 +32,13 @@ export default function DeveloperCard() {
                                 waveafterwave3w2@gmail.com
                             </a>
                         </li>
-                        <li>
-                            <a href="#!" className={styles.link}>
-                                <img
-                                    className={styles.link__img}
-                                    src={cardLocationImg}
-                                    alt="местоположение"
-                                />
-                                Пенза
-                            </a>
+                        <li className={styles.link}>
+                            <img
+                                className={styles.link__img}
+                                src={cardLocationImg}
+                                alt="местоположение"
+                            />
+                            Пенза
                         </li>
                         <li className={styles.link}>
                             <img

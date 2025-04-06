@@ -5,7 +5,7 @@ import aboutMeImg from '../../img/about-me/about-me-img.png'
 export default function AboutMe() {
     return (
         <>
-            <div className={styles.about}>
+            <section className={styles.about}>
                 <div className="container">
                     <div className={styles.row}>
                         <div className={styles.column}>
@@ -40,7 +40,7 @@ export default function AboutMe() {
                         />
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

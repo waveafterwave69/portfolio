@@ -76,7 +76,7 @@ export default function Footer() {
 
     return (
         <>
-            <div className={styles.footer}>
+            <footer className={styles.footer}>
                 <div className="container">
                     <h2 className={styles.title} data-aos="flip-up">
                         Связь
@@ -160,7 +160,7 @@ export default function Footer() {
                         </button>
                     </form>
                 </div>
-            </div>
+            </footer>
         </>
     )
 }

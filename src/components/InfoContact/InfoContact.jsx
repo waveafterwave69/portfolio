@@ -7,7 +7,7 @@ import github from '../../img/global/git.png'
 export default function InfoContact() {
     return (
         <>
-            <div className={styles.contact}>
+            <section className={styles.contact}>
                 <div className="container">
                     <div className={styles.row}>
                         <DeveloperCard />
@@ -38,7 +38,7 @@ export default function InfoContact() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }
