@@ -6,6 +6,8 @@ import cardLocationImg from '../../img/promo/promo-location.svg'
 import cardWorkImg from '../../img/promo/promo-work.svg'
 import cardDownloadImg from '../../img/promo/promo-download.svg'
 
+import resume from '../../img/da.pdf'
+
 export default function DeveloperCard() {
     return (
         <>
@@ -56,14 +58,19 @@ export default function DeveloperCard() {
                     <li className={styles.tags__item}>JS</li>
                     <li className={styles.tags__item}>REACT</li>
                 </ul>
-                <button className={styles.download}>
-                    <p className={styles.download__text}>Резюме</p>
-                    <img
-                        className={styles.download__img}
-                        src={cardDownloadImg}
-                        alt="скачать"
-                    />
-                </button>
+                <a
+                    href={resume}
+                    download="Шонов Михаил, Frontend Разработчик.pdf"
+                >
+                    <button className={styles.download}>
+                        <p className={styles.download__text}>Резюме</p>
+                        <img
+                            className={styles.download__img}
+                            src={cardDownloadImg}
+                            alt="скачать"
+                        />
+                    </button>
+                </a>
             </div>
         </>
     )

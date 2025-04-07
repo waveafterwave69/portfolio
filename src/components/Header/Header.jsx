@@ -28,7 +28,7 @@ export default function () {
                         <ul className={styles.social__list}>
                             <li>
                                 <a
-                                    href="https://t.me/asdqwwel"
+                                    href="https://t.me/wasdwave"
                                     target="_blank"
                                     className={styles.social__item}
                                 >
