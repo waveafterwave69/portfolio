@@ -11,6 +11,8 @@ export default function Info() {
             duration: 600,
             once: true,
         })
+
+        window.scrollTo(0, 0)
     }, [])
 
     return (

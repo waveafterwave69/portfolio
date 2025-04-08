@@ -11,9 +11,11 @@ import Works from '../components/Works/Works'
 export default function Main() {
     useEffect(() => {
         AOS.init({
-            duration: 600,
+            duration: 700,
             once: true,
         })
+
+        window.scrollTo(0, 0)
     }, [])
 
     return (
