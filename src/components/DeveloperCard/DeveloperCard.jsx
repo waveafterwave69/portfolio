@@ -6,7 +6,7 @@ import cardLocationImg from '../../img/promo/promo-location.svg'
 import cardWorkImg from '../../img/promo/promo-work.svg'
 import cardDownloadImg from '../../img/promo/promo-download.svg'
 
-import resume from '../../img/da.pdf'
+import resume from '../../img/front.pdf'
 
 export default function DeveloperCard() {
     return (

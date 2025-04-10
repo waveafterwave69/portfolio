@@ -14,9 +14,9 @@ export default function Promo() {
                                 <br></br> Я - Разработчик
                             </h2>
                             <p className={styles.text}>
-                                приветствую вас на своём сайте-визитке. мне 18
+                                приветствую вас на своём сайте-визитке. мне 17
                                 лет, я активно занимаюсь frontend разработкой и
-                                имею опыт уже в 2 года.
+                                имею опыт уже в 1 год.
                             </p>
                             <a
                                 href="mailto:waveafterwave3w2@gmail.com"
