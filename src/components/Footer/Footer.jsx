@@ -1,56 +1,24 @@
 import styles from './styles.module.scss'
-
+import { useForm } from 'react-hook-form'
 import img from '../../img/footer/shape.svg'
 import { useState } from 'react'
 
 export default function Footer() {
-    const [hasNameError, setHasNameError] = useState(false)
-    const [hasEmailError, setHasEmailError] = useState(false)
-    const [hasTextError, setHasTextError] = useState(false)
-    const [name, setName] = useState('')
-    const [email, setEmail] = useState('')
-    const [text, setText] = useState('')
+    const [status, setStatus] = useState('Отправить')
 
-    function handleNameChange(e) {
-        const value = e.target.value
-        setName(value)
-        setHasNameError(value.trim().length === 0)
-    }
-
-    function handleEmailChange(e) {
-        const value = e.target.value
-        setEmail(value)
-        setHasEmailError(value.trim().length === 0)
-    }
-
-    function handleTextChange(e) {
-        const value = e.target.value
-        setText(value)
-        setHasTextError(value.trim().length === 0)
-    }
-
-    function buttonClick() {
-        if (document.querySelector('#name').value.trim().length === 0) {
-            setHasNameError(true)
-        } else {
-            setHasNameError(false)
-        }
-
-        if (document.querySelector('#email').value.trim().length === 0) {
-            setHasEmailError(true)
-        } else {
-            setHasEmailError(false)
-        }
-
-        if (document.querySelector('#text').value.trim().length === 0) {
-            setHasTextError(true)
-        } else {
-            setHasTextError(false)
-        }
-    }
+    const {
+        register,
+        handleSubmit,
+        formState: { errors, isValid, isSubmitting },
+        reset,
+    } = useForm({
+        mode: 'onChange',
+    })
 
     const onSubmit = async (event) => {
         event.preventDefault()
+        setStatus('Отправка...')
+
         const formData = new FormData(event.target)
 
         formData.append('access_key', 'a318ca25-65f3-4e6e-86b3-85097fb85f2e')
@@ -68,12 +36,11 @@ export default function Footer() {
         }).then((res) => res.json())
 
         if (res.success) {
-            document.querySelector('#name').value = ''
-            document.querySelector('#email').value = ''
-            document.querySelector('#text').value = ''
+            reset()
         }
-    }
 
+        setStatus('Отправить')
+    }
     return (
         <>
             <footer className={styles.footer}>
@@ -95,15 +62,15 @@ export default function Footer() {
                                     name="name"
                                     placeholder="Напишите имя"
                                     id="name"
-                                    className={styles.form__input}
-                                    onChange={handleNameChange}
-                                    value={name}
-                                    style={{
-                                        border: hasNameError
-                                            ? '1px solid red'
-                                            : null,
-                                        padding: '5px',
-                                    }}
+                                    {...register('name', {
+                                        required:
+                                            "Поле 'Имя' обязательно для заполнения",
+                                    })}
+                                    className={
+                                        errors.name
+                                            ? `${styles.form__input__full} ${styles.input__error} ${styles.form__width}`
+                                            : `${styles.form__input__full} ${styles.form__width}`
+                                    }
                                 />
                             </div>
                             <div className={styles.form__item}>
@@ -115,15 +82,19 @@ export default function Footer() {
                                     name="email"
                                     placeholder="Напишите почту"
                                     id="email"
-                                    className={styles.form__input}
-                                    onChange={handleEmailChange}
-                                    value={email}
-                                    style={{
-                                        border: hasEmailError
-                                            ? '1px solid red'
-                                            : null,
-                                        padding: '5px',
-                                    }}
+                                    {...register('email', {
+                                        required:
+                                            "Поле 'Email' обязательно для заполнения",
+                                        pattern: {
+                                            value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                            message: 'Неверный формат email',
+                                        },
+                                    })}
+                                    className={
+                                        errors.email
+                                            ? `${styles.form__input__full} ${styles.input__error} ${styles.form__width}`
+                                            : `${styles.form__input__full} ${styles.form__width}`
+                                    }
                                 />
                             </div>
                         </div>
@@ -131,31 +102,28 @@ export default function Footer() {
                             <h5 className={styles.form__title}>
                                 Ваше сообщение *
                             </h5>
-                            <input
+                            <textarea
                                 type="text"
                                 name="message"
                                 placeholder="Напишите сообщение"
                                 id="text"
-                                className={styles.form__input__full}
-                                onChange={handleTextChange}
-                                value={text}
-                                style={{
-                                    border: hasTextError
-                                        ? '1px solid red'
-                                        : null,
-                                    padding: '5px',
-                                }}
+                                {...register('message', {
+                                    required:
+                                        "Поле 'Message' обязательно для заполнения",
+                                })}
+                                className={
+                                    errors.message
+                                        ? `${styles.form__input__full} ${styles.input__error}`
+                                        : styles.form__input__full
+                                }
                             />
                         </div>
                         <button
-                            disabled={
-                                hasEmailError || hasNameError || hasTextError
-                            }
-                            onClick={buttonClick}
+                            disabled={!isValid || isSubmitting}
                             type="submit"
                             className={styles.form__button}
                         >
-                            <p>Отправить</p>
+                            <p> {status}</p>
                             <img src={img} alt="shape" />
                         </button>
                     </form>
