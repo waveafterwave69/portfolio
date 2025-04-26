@@ -3,12 +3,13 @@ import { swiperWorkEls } from '../../helpers/data'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import work1 from '../../img/works/works-1.png'
-import work2 from '../../img/works/works-2.png'
-import work3 from '../../img/works/works-3.png'
-import work4 from '../../img/works/work-4.png'
-import work5 from '../../img/works/works-5.png'
+import work2 from '../../img/works/work-6.png'
+import work3 from '../../img/works/works-2.png'
+import work4 from '../../img/works/works-3.png'
+import work5 from '../../img/works/work-4.png'
+import work6 from '../../img/works/works-5.png'
 
-const arr = [work1, work2, work3, work4, work5]
+const arr = [work1, work2, work3, work4, work5, work6]
 import 'swiper/css'
 import 'swiper/css/navigation'
 

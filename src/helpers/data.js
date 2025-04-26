@@ -71,6 +71,11 @@ export const swiperWorkEls = [
         text: 'Веб-сайт на HTML, SASS, JS',
     },
     {
+        id: 'https://teddy-bear-two.vercel.app/',
+        img: '../../img/works/work-6.png',
+        text: 'Интернет магазин на React, SASS, Redux, React Router',
+    },
+    {
         id: 'https://fashion-chi-eight.vercel.app/',
         img: '../../img/works/works-2.svg',
         text: 'Верстка на HTML, SASS, REACT, VITE',
